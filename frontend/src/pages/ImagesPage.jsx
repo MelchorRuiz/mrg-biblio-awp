@@ -3,8 +3,7 @@ import { ImageReducer, initialState } from "../reducers/ImageReducer";
 import Alert from "../components/Alert";
 import ImageForm from "../components/ImageForm";
 import ImageTable from "../components/ImageTable";
-
-const API_URL = "http://localhost:8000";
+import { API_URL } from "../config/api";
 
 const ImagesPage = () => {
     const [state, dispatch] = useReducer(ImageReducer, initialState);

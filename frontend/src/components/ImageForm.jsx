@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { API_URL } from "../config/api";
 
 const getInitialForm = (editing) => ({
     title: editing?.title || "",
@@ -9,7 +10,6 @@ const getInitialForm = (editing) => ({
 });
 
 const ImageForm = ({ dispatch, editing }) => {
-    const API_URL = "http://localhost:8000";
     const [form, setForm] = useState(getInitialForm(editing));
     const [errors, setErrors] = useState({});
 

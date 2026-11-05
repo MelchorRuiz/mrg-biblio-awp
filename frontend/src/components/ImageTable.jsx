@@ -1,5 +1,6 @@
+import { API_URL } from "../config/api";
+
 const ImageTable = ({ images, dispatch, onEdit }) => {
-    const API_URL = "http://localhost:8000";
 
     const handleDelete = async (id, title) => {
         if (!window.confirm(`¿Estás seguro de eliminar "${title}"?`)) return;
